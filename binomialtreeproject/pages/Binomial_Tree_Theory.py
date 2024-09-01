@@ -5,6 +5,7 @@ import numpy as np
 import scipy.stats as stats
 import graphviz
 import pandas as pd
+from PIL import Image
 
 st.set_page_config(
     layout="centered",
@@ -15,8 +16,8 @@ st.set_page_config(
 st.sidebar.success("Select a page above.")
 
 def GBM_simulate():
-    st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMpaths.png", width=700)
-    st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMdistribution.png", width=700)
+    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMpaths.png"), width=700)
+    st.image(Image.("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMdistribution.png"), width=700)
     return "*1,000 sample GBM paths with a plot of the sample distribution*"
 
 def one_step_tree():
@@ -83,7 +84,7 @@ def plotTerminalPrices():
 	return "*Distribution of terminal stock prices converging in distribution to the lognormal*"
 
 def compareBinomialConvergence():
-	st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/CRRJRTianConvergence.png", width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/CRRJRTianConvergence.png"), width=700)
 
 	return "*Comparison of convergence of different parameter selections to analytic price*"
 
@@ -155,11 +156,11 @@ def drawTrinomialTree():
 	return "*Trinomial stock price tree*"
 
 def naiveBarrierConvergence():
-	st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/NaiveBarrierConvergence.png", width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/NaiveBarrierConvergence.png"), width=700)
 	return "*Convergence of naive binomial tree to analytic price of a down-and-out call*"
  
 def drawBarrierTreeConvergence():
-	st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/TrinomialNaiveConvergenceComparison.png", width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/TrinomialNaiveConvergenceComparison.png"), width=700)
 	return "*Comparison of convergence of naive binomial tree and Ritchken trinomial tree to analytic price of a down-and-out call*"
 
 def drawAmericanTree():
@@ -369,7 +370,7 @@ trees could provide both the theoretical backing of Black-Scholes as well as an 
 
 *Though CRR do note that the binomial tree can approximate the prices of other continuous-time models
 
-Rhe fact that the binomial tree is designed with Black-Scholes prices in mind will motivate much of the modifications in terms of parameter-selection. 
+The fact that the binomial tree is designed with Black-Scholes prices in mind will motivate much of the modifications in terms of parameter-selection. 
 We want some discrete process that, as the possible outcomes (or states) become closer and closer, will approximately exhibitthe continuous-time behavior 
 of a stock whose price is assumed to follow a geometric Brownian motion in the Black-Scholes framework. Geometric Brownian motion (GBM) can be defined 
 as a particular kind of stochastic process. A stochastic process is simply a sequence of random variables, usually indexed by time. Suppose that you

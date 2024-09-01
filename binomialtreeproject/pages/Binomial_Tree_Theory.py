@@ -16,8 +16,8 @@ st.set_page_config(
 st.sidebar.success("Select a page above.")
 
 def GBM_simulate():
-    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMpaths.png"), width=700)
-    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMdistribution.png"), width=700)
+    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/GBMpaths.png"), width=700)
+    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/GBMdistribution.png"), width=700)
     return "*1,000 sample GBM paths with a plot of the sample distribution*"
 
 def one_step_tree():
@@ -84,7 +84,7 @@ def plotTerminalPrices():
 	return "*Distribution of terminal stock prices converging in distribution to the lognormal*"
 
 def compareBinomialConvergence():
-	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/CRRJRTianConvergence.png"), width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/CRRJRTianConvergence.png"), width=700)
 
 	return "*Comparison of convergence of different parameter selections to analytic price*"
 
@@ -156,11 +156,11 @@ def drawTrinomialTree():
 	return "*Trinomial stock price tree*"
 
 def naiveBarrierConvergence():
-	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/NaiveBarrierConvergence.png"), width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/NaiveBarrierConvergence.png"), width=700)
 	return "*Convergence of naive binomial tree to analytic price of a down-and-out call*"
  
 def drawBarrierTreeConvergence():
-	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/TrinomialNaiveConvergenceComparison.png"), width=700)
+	st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/TrinomialNaiveConvergenceComparison.png"), width=700)
 	return "*Comparison of convergence of naive binomial tree and Ritchken trinomial tree to analytic price of a down-and-out call*"
 
 def drawAmericanTree():

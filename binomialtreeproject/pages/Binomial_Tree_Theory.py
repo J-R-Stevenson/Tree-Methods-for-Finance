@@ -16,7 +16,7 @@ st.set_page_config(
 st.sidebar.success("Select a page above.")
 
 def GBM_simulate():
-	st.image("binomialtreeproject/images/GBMpaths.png")
+	st.image("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/images/GBMpaths.png")
 	st.image("binomialtreeproject/images/GBMdistribution.png")
 	return "*1,000 sample GBM paths with a plot of the sample distribution*"
 

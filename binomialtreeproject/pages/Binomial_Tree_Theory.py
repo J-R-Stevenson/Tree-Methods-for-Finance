@@ -223,16 +223,16 @@ arbitrage is possible.
 Let us now see how to construct a replicating portfolio in general. We purchase *x* amount of the stock and *y* amount of the bond. We determine *x* 
 and *y* by the following system of equations:
 
-${{xSu + ye^{{r\\Delta t}} = C_u}}$
+${{xSu + ye^{{rT}} = C_u}}$
 
-${{xSd + ye^{{r\\Delta t}} = C_d}}$
+${{xSd + ye^{{rT}} = C_d}}$
 
 where *Su* and *Sd* are the prices of the stock at time *T* for an up and down movement respectively and ${{C_u}}$ and ${{C_d}}$ are the payoffs of 
 the option at time *T*. We solve this system to get the following values for *x* and *y*:
 
 ${{x = \\frac{{C_u - C_d}}{{S(u - d)}} }}$
 
-${{y = e^{{-r{{\\Delta}} t}}(C_u - (C_d))}}$
+${{y = e^{{-rT}} [\\frac{{uC_d - dC_u}}{{u - d}}]}}$
 
 Then if we plug in *x* and *y* to the original portfolio, we get the value of the call option:
 

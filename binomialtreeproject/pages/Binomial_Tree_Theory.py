@@ -15,8 +15,8 @@ st.set_page_config(
 st.sidebar.success("Select a page above.")
 
 def GBM_simulate():
-    st.image("GBMpaths.png", width=700)
-    st.image("GBMdistribution.png", width=700)
+    st.image("images/GBMpaths.png", width=700)
+    st.image("images/GBMdistribution.png", width=700)
     return "*1,000 sample GBM paths with a plot of the sample distribution*"
 
 def one_step_tree():
@@ -83,7 +83,7 @@ def plotTerminalPrices():
 	return "*Distribution of terminal stock prices converging in distribution to the lognormal*"
 
 def compareBinomialConvergence():
-	st.image("CRRJRTianConvergence.png", width=700)
+	st.image("images/CRRJRTianConvergence.png", width=700)
 
 	return "*Comparison of convergence of different parameter selections to analytic price*"
 
@@ -155,11 +155,11 @@ def drawTrinomialTree():
 	return "*Trinomial stock price tree*"
 
 def naiveBarrierConvergence():
-	st.image("NaiveBarrierConvergence.png", width=700)
+	st.image("images/NaiveBarrierConvergence.png", width=700)
 	return "*Convergence of naive binomial tree to analytic price of a down-and-out call*"
  
 def drawBarrierTreeConvergence():
-	st.image("TrinomialNaiveConvergenceComparison.png", width=700)
+	st.image("images/TrinomialNaiveConvergenceComparison.png", width=700)
 	return "*Comparison of convergence of naive binomial tree and Ritchken trinomial tree to analytic price of a down-and-out call*"
 
 def drawAmericanTree():

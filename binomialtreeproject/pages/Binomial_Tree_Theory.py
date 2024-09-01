@@ -17,7 +17,7 @@ st.sidebar.success("Select a page above.")
 
 def GBM_simulate():
     st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMpaths.png"), width=700)
-    st.image(Image.("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMdistribution.png"), width=700)
+    st.image(Image.open("https://raw.githubusercontent.com/J-R-Stevenson/Tree-Methods-for-Finance/main/binomialtreeproject/GBMdistribution.png"), width=700)
     return "*1,000 sample GBM paths with a plot of the sample distribution*"
 
 def one_step_tree():

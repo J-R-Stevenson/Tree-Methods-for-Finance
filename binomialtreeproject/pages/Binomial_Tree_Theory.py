@@ -176,7 +176,7 @@ __Introducing binomial trees__
 
 Binomial trees are perhaps the simplest method of option pricing. This simplicity makes them ubiquitous in introductory textbooks on
 derivative securities, but we will see that their uses are not limited to the pedagogical: tree methods and their variants can be modified to
-price a wide variety of derivative securities with quite complicated payoff functions; hey can easily handle the early-exercise property of
+price a wide variety of derivative securities with quite complicated payoff functions; they can easily handle the early-exercise property of
 American-style derivatives; and though the convergence of the original binomial tree can be relatively slow, subsequent research has developed techniques 
 that significantly improved the speed of convergence. 
 

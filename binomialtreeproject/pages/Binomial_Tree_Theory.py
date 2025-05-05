@@ -257,7 +257,7 @@ be a profit of ${{S_0e^{{rT}} - S_T > 0}}$ regardless of the movement of the sto
 to prevent arbitrage opportunities. A similar argument can be made to show that ${{e^{{rT}} > d}}$ must hold. 
 
 The condition that ${{e^{{rT}} > d}}$ is equivalent to requiring that *p* is strictly positive since *u* > *d* by definition (if u = d then
-our stock is just a risk-free asset and if u < d then we can just relabel them). The condition that ${{e^{{rT}} > u}}$ is equivalent to
+our stock is just a risk-free asset and if u < d then we can just relabel them). The condition that ${{e^{{rT}} < u}}$ is equivalent to
 requiring that *p* is strictly less than 1 (otherwise the numerator of *p* is greater than or equal to the denominator). 
 
 All of this might be simplified by saying that *p* must be in the interval (0,1). We can then think of p as a probability, but then we should wonder 

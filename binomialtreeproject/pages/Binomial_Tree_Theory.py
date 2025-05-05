@@ -253,8 +253,8 @@ Under the principle of no-arbitrage, p cannot be greater than or equal to 1. It 
 to understand these restrictions, we need to clarify some conditions on *u* and *d*. The no-arbitrage principle requires that 
 $${{0 < d < e^{{rT}} < u}}$$. Suppose that ${{e^{{rT}}  {{\\geq}}  u}}$. Then borrow the stock at time 0. Immediately sell it and
 reinvest the proceeds in a bond. At time T, buy the stock and return it using proceeds from the redemption of the bond. There will
-be a profit of ${{S_0e^{{rT}} - S_T > 0}}$ regardless of the movement of the stock price. We therefore must have ${{e^{{rT}} > u}}$
-to prevent arbitrage opportunities. A similar argument can be made to show that ${{e^{{rT}} < d}}$ must hold. 
+be a profit of ${{S_0e^{{rT}} - S_T > 0}}$ regardless of the movement of the stock price. We therefore must have ${{e^{{rT}} < u}}$
+to prevent arbitrage opportunities. A similar argument can be made to show that ${{e^{{rT}} > d}}$ must hold. 
 
 The condition that ${{e^{{rT}} > d}}$ is equivalent to requiring that *p* is strictly positive since *u* > *d* by definition (if u = d then
 our stock is just a risk-free asset and if u < d then we can just relabel them). The condition that ${{e^{{rT}} > u}}$ is equivalent to

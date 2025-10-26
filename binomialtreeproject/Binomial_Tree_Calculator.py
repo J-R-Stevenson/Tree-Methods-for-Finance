@@ -819,8 +819,6 @@ tree_objects = {
                 "Asian put (average strike)": [instantiateTree, AsianTree, tree_vars], 
                 "Asian call (average price) American-style": [instantiateTree, AsianTree, tree_vars], 
                 "Asian put (average price) American-style": [instantiateTree, AsianTree, tree_vars], 
-                "Asian call (average strike) American-style": [instantiateTree, AsianTree, tree_vars],  
-                "Asian put (average strike) American-style": [instantiateTree, AsianTree, tree_vars], 
                 "binary call (cash-or-nothing)": [instantiateTree, BinaryTree, tree_vars], 
                 "binary put (cash-or-nothing)": [instantiateTree, BinaryTree, tree_vars], 
                 "binary call (asset-or-nothing)": [instantiateTree, BinaryTree, tree_vars],  
@@ -944,3 +942,4 @@ if visualization:
     BT.draw_tree()
 else:
     st.write(f"""Option price is {BT.nodes[(0,0)].option_price}""")
+
